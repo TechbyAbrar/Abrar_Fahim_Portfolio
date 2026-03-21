@@ -259,37 +259,7 @@ export default function Portfolio() {
     }));
   };
 
-  // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  //   console.log(formData);
-  //   e.preventDefault();
-
-  //   try {
-  //     const result = await emailjs.send(
-  //       process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "", // ⬅️ Replace with actual EmailJS Service ID
-  //       process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "", // ⬅️ Replace with actual Template ID
-  //       {
-  //         name: formData.name,
-  //         email: formData.email,
-  //         subject: formData.subject,
-  //         message: formData.message,
-  //       },
-  //       process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "", // ⬅️ Replace with actual Public Key
-  //     );
-
-  //     console.log("Email sent successfully:", result.text);
-  //     alert("Message sent successfully!");
-  //     setFormData({
-  //       name: "",
-  //       email: "",
-  //       subject: "",
-  //       message: "",
-  //     });
-  //   } catch (error) {
-  //     console.error("Email send failed:", error);
-  //     alert("Failed to send message.");
-  //   }
-  // };
-
+  
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -556,7 +526,7 @@ export default function Portfolio() {
                         variant='outline'
                         className='px-3 py-1 text-sm bg-background/80 backdrop-blur-sm'
                       >
-                        React
+                        Next JS
                       </Badge>
                     </StaggerItem>
                   </StaggerChildren>
@@ -645,7 +615,7 @@ export default function Portfolio() {
                       <Terminal className='h-5 w-5 text-primary' />
                     </div>
                     <div>
-                      <div className='font-medium'>Python Developer</div>
+                      <div className='font-medium'>Software Engineer (Python)</div>
                       <div className='text-sm text-muted-foreground'>
                         JVAI • Current
                       </div>
@@ -722,7 +692,7 @@ export default function Portfolio() {
                     <CardContent className='space-y-4'>
                       <div className='space-y-2'>
                         <div className='flex justify-between'>
-                          <span className='text-sm font-medium'>Node.js</span>
+                          <span className='text-sm font-medium'>Python</span>
                         </div>
                         <div className='flex gap-1'>
                           {[...Array(5)].map((_, i) => (
@@ -742,7 +712,7 @@ export default function Portfolio() {
                       <div className='space-y-2'>
                         <div className='flex justify-between'>
                           <span className='text-sm font-medium'>
-                            Express.js
+                            FastAPI
                           </span>
                         </div>
                         <div className='flex gap-1'>
@@ -766,7 +736,7 @@ export default function Portfolio() {
                       <div className='space-y-2'>
                         <div className='flex justify-between'>
                           <span className='text-sm font-medium'>
-                            RESTful APIs
+                            Django
                           </span>
                         </div>
                         <div className='flex gap-1'>
@@ -789,7 +759,7 @@ export default function Portfolio() {
                       </div>
                       <div className='space-y-2'>
                         <div className='flex justify-between'>
-                          <span className='text-sm font-medium'>Prisma</span>
+                          <span className='text-sm font-medium'>Django Rest Framework</span>
                         </div>
                         <div className='flex gap-1'>
                           {[...Array(5)].map((_, i) => (
@@ -824,7 +794,7 @@ export default function Portfolio() {
                     <CardContent className='space-y-4'>
                       <div className='space-y-2'>
                         <div className='flex justify-between'>
-                          <span className='text-sm font-medium'>MongoDB</span>
+                          <span className='text-sm font-medium'>PostgreSQL</span>
                         </div>
                         <div className='flex gap-1'>
                           {[...Array(5)].map((_, i) => (
@@ -844,7 +814,7 @@ export default function Portfolio() {
                       <div className='space-y-2'>
                         <div className='flex justify-between'>
                           <span className='text-sm font-medium'>
-                            PostgreSQL
+                            MySQL
                           </span>
                         </div>
                         <div className='flex gap-1'>
@@ -867,7 +837,7 @@ export default function Portfolio() {
                       </div>
                       <div className='space-y-2'>
                         <div className='flex justify-between'>
-                          <span className='text-sm font-medium'>MySQL</span>
+                          <span className='text-sm font-medium'>MongoDB</span>
                         </div>
                         <div className='flex gap-1'>
                           {[...Array(5)].map((_, i) => (
@@ -924,7 +894,7 @@ export default function Portfolio() {
                     <CardContent className='space-y-4'>
                       <div className='space-y-2'>
                         <div className='flex justify-between'>
-                          <span className='text-sm font-medium'>React</span>
+                          <span className='text-sm font-medium'>HTML5 / CSS3</span>
                         </div>
                         <div className='flex gap-1'>
                           {[...Array(5)].map((_, i) => (
@@ -943,7 +913,7 @@ export default function Portfolio() {
                       </div>
                       <div className='space-y-2'>
                         <div className='flex justify-between'>
-                          <span className='text-sm font-medium'>HTML/CSS</span>
+                          <span className='text-sm font-medium'>BootStrap5</span>
                         </div>
                         <div className='flex gap-1'>
                           {[...Array(5)].map((_, i) => (
@@ -966,7 +936,7 @@ export default function Portfolio() {
                       <div className='space-y-2'>
                         <div className='flex justify-between'>
                           <span className='text-sm font-medium'>
-                            Tailwind CSS
+                            React
                           </span>
                         </div>
                         <div className='flex gap-1'>
@@ -1025,7 +995,7 @@ export default function Portfolio() {
                       <div className='space-y-2'>
                         <div className='flex justify-between'>
                           <span className='text-sm font-medium'>
-                            JavaScript
+                            Python
                           </span>
                         </div>
                         <div className='flex gap-1'>
@@ -1046,7 +1016,7 @@ export default function Portfolio() {
                       <div className='space-y-2'>
                         <div className='flex justify-between'>
                           <span className='text-sm font-medium'>
-                            TypeScript
+                            JavaScript
                           </span>
                         </div>
                         <div className='flex gap-1'>
@@ -1070,7 +1040,7 @@ export default function Portfolio() {
                       {/* c */}
                       <div className='space-y-2'>
                         <div className='flex justify-between'>
-                          <span className='text-sm font-medium'>C</span>
+                          <span className='text-sm font-medium'>Java</span>
                         </div>
                         <div className='flex gap-1'>
                           {[...Array(5)].map((_, i) => (
@@ -1093,7 +1063,7 @@ export default function Portfolio() {
                       {/* c++ */}
                       <div className='space-y-2'>
                         <div className='flex justify-between'>
-                          <span className='text-sm font-medium'>C++</span>
+                          <span className='text-sm font-medium'>GO (Learning)</span>
                         </div>
                         <div className='flex gap-1'>
                           {[...Array(5)].map((_, i) => (
@@ -1134,11 +1104,11 @@ export default function Portfolio() {
                   },
                   {
                     icon: <Globe className='h-6 w-6 sm:h-8 sm:w-8' />,
-                    name: "REST",
+                    name: "RestAPI",
                   },
                   {
                     icon: <SiHostinger className='h-6 w-6 sm:h-8 sm:w-8' />,
-                    name: "Hostinger",
+                    name: "VPS / Hostinger",
                   },
                   {
                     icon: <Terminal className='h-6 w-6 sm:h-8 sm:w-8' />,
@@ -1371,7 +1341,7 @@ export default function Portfolio() {
                 Professional Experience
               </h2>
               <p className='max-w-[700px] text-muted-foreground text-sm sm:text-base md:text-xl/relaxed'>
-                My journey as a developer and the valuable experience I've
+                My journey as a Software Engineer and the valuable experience I've
                 gained along the way
               </p>
             </div>
@@ -1397,12 +1367,12 @@ export default function Portfolio() {
                 >
                   <div className='mb-2 md:mb-0'>
                     <Badge className='mb-1'>Current</Badge>
-                    <h3 className='text-xl font-bold'>Python Developer</h3>
+                    <h3 className='text-xl font-bold'>Junior Software Engineer (Python)</h3>
                     <p className='text-primary font-medium'>JVAI</p>
-                    <p className='text-sm text-muted-foreground'>1.4 years</p>
+                    <p className='text-sm text-muted-foreground'>1.4 years (onsite)</p>
                   </div>
                 </FadeIn>
-
+ 
                 <motion.div
                   className='absolute left-4 md:left-1/2 -translate-x-1/2 flex items-center justify-center'
                   initial={{ scale: 0, opacity: 0 }}
@@ -1427,58 +1397,56 @@ export default function Portfolio() {
                   <Card className='border-none shadow-md bg-gradient-to-br from-background to-muted/80'>
                     <CardContent className='p-4 sm:p-6'>
                       <StaggerChildren>
-                        <ul className='space-y-2 '>
-                          <StaggerItem>
+                        <ul className='space-y-2'>
                             <li className='flex items-start gap-2'>
                               <ChevronRight className='h-5 w-5 text-primary flex-shrink-0 mt-0.5' />
                               <span className='text-sm sm:text-base'>
-                                Working as a Python developer on multiple
-                                projects, including CRM platforms, social media
-                                applications, and money exchange systems
+                                Designed and implemented production-grade RESTful APIs using Django and FastAPI with scalable, maintainable architecture
                               </span>
                             </li>
-                          </StaggerItem>
-                          <StaggerItem>
+
                             <li className='flex items-start gap-2'>
                               <ChevronRight className='h-5 w-5 text-primary flex-shrink-0 mt-0.5' />
                               <span className='text-sm sm:text-base'>
-                                Regularly meeting with clients to gather
-                                requirements, provide technical guidance, and
-                                ensure project alignment with business goals
+                                Architected domain-driven services and modular AI components following service-oriented architecture principles
                               </span>
                             </li>
-                          </StaggerItem>
-                          <StaggerItem>
+
                             <li className='flex items-start gap-2'>
                               <ChevronRight className='h-5 w-5 text-primary flex-shrink-0 mt-0.5' />
                               <span className='text-sm sm:text-base'>
-                                Collaborating closely with frontend developers,
-                                designers, and QA teams to deliver scalable and
-                                maintainable solutions
+                                Optimized backend performance using database indexing, query tuning, Redis caching, and efficient pagination strategies
                               </span>
                             </li>
-                          </StaggerItem>
-                          <StaggerItem>
+
                             <li className='flex items-start gap-2'>
                               <ChevronRight className='h-5 w-5 text-primary flex-shrink-0 mt-0.5' />
                               <span className='text-sm sm:text-base'>
-                                Writing clean, well-documented, and
-                                production-ready code while following best
-                                practices in architecture and security
+                                Implemented asynchronous task processing with Celery and Redis, and built real-time systems using WebSockets for chat and live features
                               </span>
                             </li>
-                          </StaggerItem>
-                          <StaggerItem>
+
                             <li className='flex items-start gap-2'>
                               <ChevronRight className='h-5 w-5 text-primary flex-shrink-0 mt-0.5' />
                               <span className='text-sm sm:text-base'>
-                                Continuously learning and adapting to new
-                                technologies, tools, and development
-                                methodologies to improve project outcomes
+                                Integrated secure payment systems (Stripe, PayPal) with webhook handling and idempotent transaction workflows
                               </span>
                             </li>
-                          </StaggerItem>
-                        </ul>
+
+                            <li className='flex items-start gap-2'>
+                              <ChevronRight className='h-5 w-5 text-primary flex-shrink-0 mt-0.5' />
+                              <span className='text-sm sm:text-base'>
+                                Ensured system reliability and security using transaction management, RBAC, rate limiting, and environment-based configurations
+                              </span>
+                            </li>
+
+                            <li className='flex items-start gap-2'>
+                              <ChevronRight className='h-5 w-5 text-primary flex-shrink-0 mt-0.5' />
+                              <span className='text-sm sm:text-base'>
+                                Deployed and maintained containerized applications using Docker, Nginx, Gunicorn, and Uvicorn on Linux-based VPS environments
+                              </span>
+                            </li>
+                          </ul>
                       </StaggerChildren>
                       <motion.div
                         className='flex flex-wrap gap-2 mt-4'
@@ -1487,16 +1455,16 @@ export default function Portfolio() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.6 }}
                       >
-                        <Badge variant='secondary'>Node.js</Badge>
-                        <Badge variant='secondary'>Express</Badge>
-                        <Badge variant='secondary'>MongoDB</Badge>
+                        <Badge variant='secondary'>Python</Badge>
+                        <Badge variant='secondary'>Django</Badge>
+                        <Badge variant='secondary'>FastAPI</Badge>
                         <Badge variant='secondary'>RESTful APIs</Badge>
                         <Badge variant='secondary'>Stripe</Badge>
                         <Badge variant='secondary'>Socket.oi</Badge>
                         <Badge variant='secondary'>Ubuntu</Badge>
                         <Badge variant='secondary'>Docker</Badge>
                         <Badge variant='secondary'>AWS S3</Badge>
-                        <Badge variant='secondary'>Typescript</Badge>
+                        <Badge variant='secondary'>Linux Server</Badge>
                       </motion.div>
                     </CardContent>
                   </Card>
@@ -1513,34 +1481,42 @@ export default function Portfolio() {
                     <CardContent className='p-4 sm:p-6'>
                       <StaggerChildren>
                         <ul className='space-y-2 md:ml-auto'>
-                          <StaggerItem>
-                            <li className='flex items-start gap-2 md:flex-row-reverse'>
-                              <ChevronRight className='h-5 w-5 text-primary flex-shrink-0 mt-0.5 md:rotate-180' />
-                              <span className='text-sm sm:text-base'>
-                                Developed both frontend and backend components
-                                for web applications
-                              </span>
-                            </li>
-                          </StaggerItem>
-                          <StaggerItem>
-                            <li className='flex items-start gap-2 md:flex-row-reverse'>
-                              <ChevronRight className='h-5 w-5 text-primary flex-shrink-0 mt-0.5 md:rotate-180' />
-                              <span className='text-sm sm:text-base'>
-                                Implemented responsive UI designs using modern
-                                frontend frameworks
-                              </span>
-                            </li>
-                          </StaggerItem>
-                          <StaggerItem>
-                            <li className='flex items-start gap-2 md:flex-row-reverse'>
-                              <ChevronRight className='h-5 w-5 text-primary flex-shrink-0 mt-0.5 md:rotate-180' />
-                              <span className='text-sm sm:text-base'>
-                                Participated in the full software development
-                                lifecycle
-                              </span>
-                            </li>
-                          </StaggerItem>
-                        </ul>
+                              <StaggerItem>
+                                <li className='flex items-start gap-2 md:flex-row-reverse'>
+                                  <ChevronRight className='h-5 w-5 text-primary flex-shrink-0 mt-0.5 md:rotate-180' />
+                                  <span className='text-sm sm:text-base'>
+                                    Developed RESTful APIs using Django and DRF with consistent response structures, input validation, and proper HTTP status handling
+                                  </span>
+                                </li>
+                              </StaggerItem>
+
+                              <StaggerItem>
+                                <li className='flex items-start gap-2 md:flex-row-reverse'>
+                                  <ChevronRight className='h-5 w-5 text-primary flex-shrink-0 mt-0.5 md:rotate-180' />
+                                  <span className='text-sm sm:text-base'>
+                                    Designed normalized relational database schemas and optimized SQL queries to improve performance and reduce load
+                                  </span>
+                                </li>
+                              </StaggerItem>
+
+                              <StaggerItem>
+                                <li className='flex items-start gap-2 md:flex-row-reverse'>
+                                  <ChevronRight className='h-5 w-5 text-primary flex-shrink-0 mt-0.5 md:rotate-180' />
+                                  <span className='text-sm sm:text-base'>
+                                    Implemented secure authentication, request validation, and structured exception handling for reliable API behavior
+                                  </span>
+                                </li>
+                              </StaggerItem>
+
+                              <StaggerItem>
+                                <li className='flex items-start gap-2 md:flex-row-reverse'>
+                                  <ChevronRight className='h-5 w-5 text-primary flex-shrink-0 mt-0.5 md:rotate-180' />
+                                  <span className='text-sm sm:text-base'>
+                                    Assisted in deployment, debugging, and maintenance of applications on Linux-based VPS environments following SDLC practices
+                                  </span>
+                                </li>
+                              </StaggerItem>
+                          </ul>
                       </StaggerChildren>
                       <motion.div
                         className='flex flex-wrap gap-2 mt-4 md:justify-end'
@@ -1549,11 +1525,13 @@ export default function Portfolio() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.6 }}
                       >
-                        <Badge variant='secondary'>Next.js</Badge>
-                        <Badge variant='secondary'>Prisma</Badge>
-                        <Badge variant='secondary'>MySQL</Badge>
-                        <Badge variant='secondary'>TypeScript</Badge>
-                        <Badge variant='secondary'>Tailwind</Badge>
+                        <Badge variant='secondary'>Object Oriented Programming (OOP)</Badge>
+                        <Badge variant='secondary'>Software Development Life Cycle (SDLC)</Badge>
+                        <Badge variant='secondary'>Database Schema Design</Badge>
+                        <Badge variant='secondary'>Django</Badge>
+                        <Badge variant='secondary'>Django REST Framework (DRF)</Badge>
+                        <Badge variant='secondary'>MVC Architecture</Badge>
+                        <Badge variant='secondary'>Linux Environment</Badge>
                       </motion.div>
                     </CardContent>
                   </Card>
@@ -1581,19 +1559,19 @@ export default function Portfolio() {
                   className='flex flex-1 flex-col md:items-start md:pl-10 order-2 pl-12 md:pl-10'
                 >
                   <div className='mb-2 md:mb-0'>
-                    <h3 className='text-xl font-bold'>Full Stack Developer</h3>
+                    <h3 className='text-xl font-bold'>Intern Software Engineer (Django)</h3>
                     <p className='text-primary font-medium'>
-                      Dot BD Solutions Limited
+                      Braincell Technologies Ltd
                     </p>
                     <p className='text-sm text-muted-foreground'>
-                      3 months (Onsite)
+                      6 months (Onsite)
                     </p>
                   </div>
                 </FadeIn>
               </div>
 
               {/* First job */}
-              <div className='relative flex flex-col md:flex-row items-start'>
+              {/* <div className='relative flex flex-col md:flex-row items-start'>
                 <FadeIn
                   direction='right'
                   className='flex flex-1 flex-col md:items-end md:pr-10 md:text-right order-2 md:order-1 pl-12 md:pl-0'
@@ -1677,7 +1655,7 @@ export default function Portfolio() {
                     </CardContent>
                   </Card>
                 </FadeIn>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -1700,6 +1678,250 @@ export default function Portfolio() {
           </FadeIn>
 
           <div className='grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto'>
+
+            
+            {/* Project -2 */}
+            <FadeIn delay={0.2}>
+              <motion.div
+                className='h-full'
+                whileHover={{ y: -10 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
+                <Card className='group overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col'>
+                  <div className='relative aspect-video overflow-hidden'>
+                    <div className='absolute inset-0 bg-gradient-to-t from-background to-transparent z-10'></div>
+                    <Image
+                      src={skinSpired}
+                      alt='SkinSpired Project'
+                      width={100}
+                      height={100}
+                      className='object-cover w-full h-full'
+                    />
+                  </div>
+
+                  <CardContent className='p-4 sm:p-6 flex flex-col flex-1'>
+                    <Badge className='mb-2 w-fit'>Backend</Badge>
+
+                    <h3 className='text-lg sm:text-xl font-bold mb-2'>
+                      SkinSpired
+                    </h3>
+
+                    <p className='text-muted-foreground text-sm sm:text-base mb-4 line-clamp-6'>
+                      SkinSpired is a live mobile skincare application that helps
+                      users identify their skin conditions, follow recommended
+                      treatments, and track their skin improvement over time. Users
+                      can sign up, set up their profiles, and select their specific
+                      skin condition from a comprehensive list. The app allows users
+                      to take daily photos to monitor progress, compare results, and
+                      view improvement through visual graphs. Additionally, SkinSpired
+                      provides scheduled reminders and notifications to help users
+                      maintain consistent skincare routines. The platform is fully
+                      user-friendly and completely free, offering an effective and
+                      accessible solution for personalized skin health management.
+                    </p>
+
+                    <div className='flex flex-wrap gap-2 mb-4'>
+                      <Badge variant='outline'>Flutter</Badge>
+                      <Badge variant='outline'>Socket.IO</Badge>
+                      <Badge variant='outline'>Python</Badge>
+                      <Badge variant='outline'>Django</Badge>
+                      <Badge variant='outline'>MongoDB</Badge>
+                      <Badge variant='outline'>Django Rest Framework</Badge>
+                    </div>
+
+                    <div className='mt-auto flex justify-between items-center'>
+                      <AnimatedButton
+                        asChild
+                        variant='outline'
+                        size='sm'
+                        className='gap-1'
+                      >
+                        <a
+                          href='https://github.com/Alpha-Bytes-Department/skin-spired-server'
+                          target='_blank'
+                          rel='noopener noreferrer'
+                        >
+                          <Github className='h-4 w-4' />
+                        </a>
+                      </AnimatedButton>
+
+                      <AnimatedButton asChild size='sm' className='gap-1'>
+                        <a
+                          href='https://play.google.com/store/apps/details?id=com.lauren.personal_wellness&pli=1'
+                          target='_blank'
+                          rel='noopener noreferrer'
+                        >
+                          <ExternalLink className='h-4 w-4' />
+                        </a>
+                      </AnimatedButton>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            </FadeIn>
+            
+            {/* Project -1 */}
+            <FadeIn delay={0.2}>
+              <motion.div
+                className='h-full'
+                whileHover={{ y: -10 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
+                <Card className='group overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col'>
+                  <div className='relative aspect-video overflow-hidden'>
+                    <div className='absolute inset-0 bg-gradient-to-t from-background to-transparent z-10'></div>
+                    <Image
+                      src={skinSpired}
+                      alt='SkinSpired Project'
+                      width={100}
+                      height={100}
+                      className='object-cover w-full h-full'
+                    />
+                  </div>
+
+                  <CardContent className='p-4 sm:p-6 flex flex-col flex-1'>
+                    <Badge className='mb-2 w-fit'>Backend</Badge>
+
+                    <h3 className='text-lg sm:text-xl font-bold mb-2'>
+                      SkinSpired
+                    </h3>
+
+                    <p className='text-muted-foreground text-sm sm:text-base mb-4 line-clamp-6'>
+                      SkinSpired is a live mobile skincare application that helps
+                      users identify their skin conditions, follow recommended
+                      treatments, and track their skin improvement over time. Users
+                      can sign up, set up their profiles, and select their specific
+                      skin condition from a comprehensive list. The app allows users
+                      to take daily photos to monitor progress, compare results, and
+                      view improvement through visual graphs. Additionally, SkinSpired
+                      provides scheduled reminders and notifications to help users
+                      maintain consistent skincare routines. The platform is fully
+                      user-friendly and completely free, offering an effective and
+                      accessible solution for personalized skin health management.
+                    </p>
+
+                    <div className='flex flex-wrap gap-2 mb-4'>
+                      <Badge variant='outline'>Flutter</Badge>
+                      <Badge variant='outline'>Socket.IO</Badge>
+                      <Badge variant='outline'>Python</Badge>
+                      <Badge variant='outline'>Django</Badge>
+                      <Badge variant='outline'>MongoDB</Badge>
+                      <Badge variant='outline'>Django Rest Framework</Badge>
+                    </div>
+
+                    <div className='mt-auto flex justify-between items-center'>
+                      <AnimatedButton
+                        asChild
+                        variant='outline'
+                        size='sm'
+                        className='gap-1'
+                      >
+                        <a
+                          href='https://github.com/Alpha-Bytes-Department/skin-spired-server'
+                          target='_blank'
+                          rel='noopener noreferrer'
+                        >
+                          <Github className='h-4 w-4' />
+                        </a>
+                      </AnimatedButton>
+
+                      <AnimatedButton asChild size='sm' className='gap-1'>
+                        <a
+                          href='https://play.google.com/store/apps/details?id=com.lauren.personal_wellness&pli=1'
+                          target='_blank'
+                          rel='noopener noreferrer'
+                        >
+                          <ExternalLink className='h-4 w-4' />
+                        </a>
+                      </AnimatedButton>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            </FadeIn>
+
+
+            {/* Project 0 */}
+            <FadeIn delay={0.2}>
+              <motion.div
+                className='h-full'
+                whileHover={{ y: -10 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
+                <Card className='group overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col'>
+                  <div className='relative aspect-video overflow-hidden'>
+                    <div className='absolute inset-0 bg-gradient-to-t from-background to-transparent z-10'></div>
+                    <Image
+                      src={skinSpired}
+                      alt='SkinSpired Project'
+                      width={100}
+                      height={100}
+                      className='object-cover w-full h-full'
+                    />
+                  </div>
+
+                  <CardContent className='p-4 sm:p-6 flex flex-col flex-1'>
+                    <Badge className='mb-2 w-fit'>Backend</Badge>
+
+                    <h3 className='text-lg sm:text-xl font-bold mb-2'>
+                      SkinSpired
+                    </h3>
+
+                    <p className='text-muted-foreground text-sm sm:text-base mb-4 line-clamp-6'>
+                      SkinSpired is a live mobile skincare application that helps
+                      users identify their skin conditions, follow recommended
+                      treatments, and track their skin improvement over time. Users
+                      can sign up, set up their profiles, and select their specific
+                      skin condition from a comprehensive list. The app allows users
+                      to take daily photos to monitor progress, compare results, and
+                      view improvement through visual graphs. Additionally, SkinSpired
+                      provides scheduled reminders and notifications to help users
+                      maintain consistent skincare routines. The platform is fully
+                      user-friendly and completely free, offering an effective and
+                      accessible solution for personalized skin health management.
+                    </p>
+
+                    <div className='flex flex-wrap gap-2 mb-4'>
+                      <Badge variant='outline'>Flutter</Badge>
+                      <Badge variant='outline'>Socket.IO</Badge>
+                      <Badge variant='outline'>Python</Badge>
+                      <Badge variant='outline'>Django</Badge>
+                      <Badge variant='outline'>MongoDB</Badge>
+                      <Badge variant='outline'>Django Rest Framework</Badge>
+                    </div>
+
+                    <div className='mt-auto flex justify-between items-center'>
+                      <AnimatedButton
+                        asChild
+                        variant='outline'
+                        size='sm'
+                        className='gap-1'
+                      >
+                        <a
+                          href='https://github.com/Alpha-Bytes-Department/skin-spired-server'
+                          target='_blank'
+                          rel='noopener noreferrer'
+                        >
+                          <Github className='h-4 w-4' />
+                        </a>
+                      </AnimatedButton>
+
+                      <AnimatedButton asChild size='sm' className='gap-1'>
+                        <a
+                          href='https://play.google.com/store/apps/details?id=com.lauren.personal_wellness&pli=1'
+                          target='_blank'
+                          rel='noopener noreferrer'
+                        >
+                          <ExternalLink className='h-4 w-4' />
+                        </a>
+                      </AnimatedButton>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            </FadeIn>
+
+
             {/* Project 1 */}
             <FadeIn delay={0.2}>
               <motion.div
@@ -1743,10 +1965,10 @@ export default function Portfolio() {
                     <div className='flex flex-wrap gap-2 mb-4'>
                       <Badge variant='outline'>Flutter</Badge>
                       <Badge variant='outline'>Socket.IO</Badge>
-                      <Badge variant='outline'>Node.js</Badge>
-                      <Badge variant='outline'>Express</Badge>
+                      <Badge variant='outline'>Python</Badge>
+                      <Badge variant='outline'>Django</Badge>
                       <Badge variant='outline'>MongoDB</Badge>
-                      <Badge variant='outline'>TypeScript</Badge>
+                      <Badge variant='outline'>Django Rest Framework</Badge>
                     </div>
 
                     <div className='mt-auto flex justify-between items-center'>
@@ -1816,8 +2038,8 @@ export default function Portfolio() {
 
                     <div className='flex flex-wrap gap-2 mb-4'>
                       <Badge variant='outline'>React</Badge>
-                      <Badge variant='outline'>Node.js</Badge>
-                      <Badge variant='outline'>Express</Badge>
+                      <Badge variant='outline'>Django</Badge>
+                      <Badge variant='outline'>Django Rest Framework</Badge>
                       <Badge variant='outline'>MongoDB</Badge>
                     </div>
 
@@ -2027,6 +2249,32 @@ export default function Portfolio() {
                         </a>
                       </div>
                     </motion.div>
+
+                     <motion.div
+                      className='flex items-center gap-4 p-3 sm:p-4 rounded-lg bg-muted/50'
+                      whileHover={{ x: 5 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                      }}
+                    >
+                      <div className='h-8 w-8 sm:h-10 sm:w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary'>
+                        <Linkedin className='h-4 w-4 sm:h-5 sm:w-5' />
+                      </div>
+                      <div>
+                        <p className='text-xs sm:text-sm text-muted-foreground'>LinkedIn</p>
+                        <a
+                          href='https://www.linkedin.com/in/techbyabrar'
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          className='font-medium text-sm sm:text-base hover:text-primary'
+                        >
+                          linkedin.com/in/techbyabrar
+                        </a>
+                      </div>
+                    </motion.div>
+
                   </CardContent>
                 </Card>
               </FadeIn>
