@@ -2526,7 +2526,7 @@ export default function Portfolio() {
                             rel="noopener noreferrer"
                             className="font-medium text-sm sm:text-base hover:text-primary"
                           >
-                            techbyabrar
+                            leetcode.com/u/techbyabrar/
                           </a>
                         </div>
                       </motion.div>
