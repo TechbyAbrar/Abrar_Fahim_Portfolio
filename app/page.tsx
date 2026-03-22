@@ -49,8 +49,14 @@ import rifat from "../assets/abrar_fahim.png";
 import skinSpired from "../assets/skin.webp";
 import enitiativeImg from "../assets/enitiativeImg.png";
 import globalFootballVaultImg from "../assets/globalFootballVaultImg.png";
+import matchMakingAppImg from "../assets/matchMakingAppImg.png";
+import spiralJourneyImg from "../assets/spiralJourneyImg.png";
+import wonderlinkImg from "../assets/wonderlinkImg.png";
+import j4corpImg from "../assets/j4corpImg.png";
+import velooImg from "../assets/velooImg.png";
+import datingAppImg from "../assets/datingAppImg.png";
 import hotTube from "../assets/hot-tube.png";
-import baby from "../assets/baby-sitter.png";
+
 
 
 export default function Portfolio() {
@@ -1704,7 +1710,7 @@ export default function Portfolio() {
                   </div>
 
                   <CardContent className='p-4 sm:p-6 flex flex-col flex-1'>
-                    <Badge className='mb-2 w-fit'>Healthcare / AI Platform</Badge>
+                    <Badge className='mb-2 w-fit'>Backend (Web Application)</Badge>
 
                     <h3 className='text-lg sm:text-xl font-bold mb-2'>
                       Enitiative
@@ -1779,7 +1785,7 @@ export default function Portfolio() {
                   </div>
 
                   <CardContent className="p-4 sm:p-6 flex flex-col flex-1">
-                    <Badge className="mb-2 w-fit">Backend</Badge>
+                    <Badge className="mb-2 w-fit">Backend (Web Application)</Badge>
 
                     <h3 className="text-lg sm:text-xl font-bold mb-2">
                       GlobalFootballVault
@@ -1842,75 +1848,76 @@ export default function Portfolio() {
             {/* Project 0 */}
             <FadeIn delay={0.2}>
               <motion.div
-                className='h-full'
+                className="h-full"
                 whileHover={{ y: -10 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
-                <Card className='group overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col'>
-                  <div className='relative aspect-video overflow-hidden'>
-                    <div className='absolute inset-0 bg-gradient-to-t from-background to-transparent z-10'></div>
+                <Card className="group overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                  <div className="relative aspect-video overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10"></div>
                     <Image
-                      src={skinSpired}
-                      alt='SkinSpired Project'
-                      width={100}
-                      height={100}
-                      className='object-cover w-full h-full'
+                      src={matchMakingAppImg}
+                      alt="Dating Platform Backend"
+                      width={1000}
+                      height={600}
+                      className="object-cover w-full h-full"
                     />
                   </div>
 
-                  <CardContent className='p-4 sm:p-6 flex flex-col flex-1'>
-                    <Badge className='mb-2 w-fit'>Backend</Badge>
+                  <CardContent className="p-4 sm:p-6 flex flex-col flex-1">
+                    <Badge className="mb-2 w-fit">Backend (Mobile App)</Badge>
 
-                    <h3 className='text-lg sm:text-xl font-bold mb-2'>
-                      SkinSpired
+                    <h3 className="text-lg sm:text-xl font-bold mb-2">
+                      Production Grade Dating Platform Backend
                     </h3>
 
-                    <p className='text-muted-foreground text-sm sm:text-base mb-4 line-clamp-6'>
-                      SkinSpired is a live mobile skincare application that helps
-                      users identify their skin conditions, follow recommended
-                      treatments, and track their skin improvement over time. Users
-                      can sign up, set up their profiles, and select their specific
-                      skin condition from a comprehensive list. The app allows users
-                      to take daily photos to monitor progress, compare results, and
-                      view improvement through visual graphs. Additionally, SkinSpired
-                      provides scheduled reminders and notifications to help users
-                      maintain consistent skincare routines. The platform is fully
-                      user-friendly and completely free, offering an effective and
-                      accessible solution for personalized skin health management.
+                    <p className="text-muted-foreground text-sm sm:text-base mb-4 line-clamp-6">
+                      Built a production-grade Django REST API backend for a modern dating
+                      platform featuring real-time chat, geolocation-based discovery,
+                      subscriptions, and audio/video calling. The system is designed
+                      with scalable architecture using ASGI, Redis, Celery, and PostGIS
+                      to support high-performance real-time interactions.
                     </p>
 
-                    <div className='flex flex-wrap gap-2 mb-4'>
-                      <Badge variant='outline'>Flutter</Badge>
-                      <Badge variant='outline'>Socket.IO</Badge>
-                      <Badge variant='outline'>Python</Badge>
-                      <Badge variant='outline'>Django</Badge>
-                      <Badge variant='outline'>MongoDB</Badge>
-                      <Badge variant='outline'>Django Rest Framework</Badge>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <Badge variant="outline">Django</Badge>
+                      <Badge variant="outline">DRF</Badge>
+                      <Badge variant="outline">PostgreSQL</Badge>
+                      <Badge variant="outline">PostGIS</Badge>
+                      <Badge variant="outline">Redis</Badge>
+                      <Badge variant="outline">Celery</Badge>
+                      <Badge variant="outline">ASGI</Badge>
+                      <Badge variant="outline">WebSockets</Badge>
                     </div>
 
-                    <div className='mt-auto flex justify-between items-center'>
+                    <div className="mt-auto flex justify-between items-center">
                       <AnimatedButton
                         asChild
-                        variant='outline'
-                        size='sm'
-                        className='gap-1'
+                        variant="outline"
+                        size="sm"
+                        className="gap-1"
                       >
                         <a
-                          href='https://github.com/Alpha-Bytes-Department/skin-spired-server'
-                          target='_blank'
-                          rel='noopener noreferrer'
+                          href="https://github.com/TechbyAbrar/match-making-app"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View Dating Platform Backend Repository"
                         >
-                          <Github className='h-4 w-4' />
+                          <Github className="h-4 w-4" />
                         </a>
                       </AnimatedButton>
 
-                      <AnimatedButton asChild size='sm' className='gap-1'>
+                      <AnimatedButton
+                        asChild
+                        size="sm"
+                        className="gap-1 opacity-50 cursor-not-allowed"
+                      >
                         <a
-                          href='https://play.google.com/store/apps/details?id=com.lauren.personal_wellness&pli=1'
-                          target='_blank'
-                          rel='noopener noreferrer'
+                          href="#"
+                          title="Live demo coming soon"
+                          aria-label="Live demo coming soon"
                         >
-                          <ExternalLink className='h-4 w-4' />
+                          <ExternalLink className="h-4 w-4" />
                         </a>
                       </AnimatedButton>
                     </div>
@@ -1919,79 +1926,78 @@ export default function Portfolio() {
               </motion.div>
             </FadeIn>
 
-
             {/* Project 1 */}
             <FadeIn delay={0.2}>
               <motion.div
-                className='h-full'
+                className="h-full"
                 whileHover={{ y: -10 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
-                <Card className='group overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col'>
-                  <div className='relative aspect-video overflow-hidden'>
-                    <div className='absolute inset-0 bg-gradient-to-t from-background to-transparent z-10'></div>
+                <Card className="group overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                  <div className="relative aspect-video overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10"></div>
                     <Image
-                      src={skinSpired}
-                      alt='SkinSpired Project'
-                      width={100}
-                      height={100}
-                      className='object-cover w-full h-full'
+                      src={spiralJourneyImg}
+                      alt="Spiral Journey Project"
+                      width={1000}
+                      height={600}
+                      className="object-cover w-full h-full"
                     />
                   </div>
 
-                  <CardContent className='p-4 sm:p-6 flex flex-col flex-1'>
-                    <Badge className='mb-2 w-fit'>Backend</Badge>
+                  <CardContent className="p-4 sm:p-6 flex flex-col flex-1">
+                    <Badge className="mb-2 w-fit">Backend (Mobile App)</Badge>
 
-                    <h3 className='text-lg sm:text-xl font-bold mb-2'>
-                      SkinSpired
+                    <h3 className="text-lg sm:text-xl font-bold mb-2">
+                      Spiral Journey
                     </h3>
 
-                    <p className='text-muted-foreground text-sm sm:text-base mb-4 line-clamp-6'>
-                      SkinSpired is a live mobile skincare application that helps
-                      users identify their skin conditions, follow recommended
-                      treatments, and track their skin improvement over time. Users
-                      can sign up, set up their profiles, and select their specific
-                      skin condition from a comprehensive list. The app allows users
-                      to take daily photos to monitor progress, compare results, and
-                      view improvement through visual graphs. Additionally, SkinSpired
-                      provides scheduled reminders and notifications to help users
-                      maintain consistent skincare routines. The platform is fully
-                      user-friendly and completely free, offering an effective and
-                      accessible solution for personalized skin health management.
+                    <p className="text-muted-foreground text-sm sm:text-base mb-4 line-clamp-6">
+                      Built a scalable Django REST API backend for a personal growth mobile
+                      application featuring guided onboarding journeys, journaling, and
+                      structured self-development tracking. Designed with a modular
+                      architecture to support subscription workflows, analytics dashboards,
+                      and mobile-first API consumption.
                     </p>
 
-                    <div className='flex flex-wrap gap-2 mb-4'>
-                      <Badge variant='outline'>Flutter</Badge>
-                      <Badge variant='outline'>Socket.IO</Badge>
-                      <Badge variant='outline'>Python</Badge>
-                      <Badge variant='outline'>Django</Badge>
-                      <Badge variant='outline'>MongoDB</Badge>
-                      <Badge variant='outline'>Django Rest Framework</Badge>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <Badge variant="outline">Python</Badge>
+                      <Badge variant="outline">Django</Badge>
+                      <Badge variant="outline">Django REST Framework</Badge>
+                      <Badge variant="outline">PostgreSQL</Badge>
+                      <Badge variant="outline">JWT Auth</Badge>
+                      <Badge variant="outline">WhiteNoise</Badge>
+                      <Badge variant="outline">REST APIs</Badge>
                     </div>
 
-                    <div className='mt-auto flex justify-between items-center'>
+                    <div className="mt-auto flex justify-between items-center">
                       <AnimatedButton
                         asChild
-                        variant='outline'
-                        size='sm'
-                        className='gap-1'
+                        variant="outline"
+                        size="sm"
+                        className="gap-1"
                       >
                         <a
-                          href='https://github.com/Alpha-Bytes-Department/skin-spired-server'
-                          target='_blank'
-                          rel='noopener noreferrer'
+                          href="https://github.com/TechbyAbrar/spiral-journey"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View Spiral Journey Repository"
                         >
-                          <Github className='h-4 w-4' />
+                          <Github className="h-4 w-4" />
                         </a>
                       </AnimatedButton>
 
-                      <AnimatedButton asChild size='sm' className='gap-1'>
+                      <AnimatedButton
+                        asChild
+                        size="sm"
+                        className="gap-1 opacity-50 cursor-not-allowed"
+                      >
                         <a
-                          href='https://play.google.com/store/apps/details?id=com.lauren.personal_wellness&pli=1'
-                          target='_blank'
-                          rel='noopener noreferrer'
+                          href="#"
+                          title="Live demo coming soon"
+                          aria-label="Live demo coming soon"
                         >
-                          <ExternalLink className='h-4 w-4' />
+                          <ExternalLink className="h-4 w-4" />
                         </a>
                       </AnimatedButton>
                     </div>
@@ -2001,6 +2007,244 @@ export default function Portfolio() {
             </FadeIn>
 
             {/* Project 2 */}
+            <FadeIn delay={0.2}>
+              <motion.div
+                className="h-full"
+                whileHover={{ y: -10 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
+                <Card className="group overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                  <div className="relative aspect-video overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10"></div>
+                    <Image
+                      src={wonderlinkImg}
+                      alt="Wonderlink Social Platform"
+                      width={1000}
+                      height={600}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+
+                  <CardContent className="p-4 sm:p-6 flex flex-col flex-1">
+                    <Badge className="mb-2 w-fit">Backend (Mobile APP)</Badge>
+
+                    <h3 className="text-lg sm:text-xl font-bold mb-2">
+                      Wonderlink Social Platform
+                    </h3>
+
+                    <p className="text-muted-foreground text-sm sm:text-base mb-4 line-clamp-6">
+                      Built a scalable Django backend for a modern social networking platform
+                      featuring real-time chat, friend systems, and location-based interactions.
+                      Designed using Django REST Framework and Channels with Redis to support
+                      high-performance real-time communication and modular social graph architecture.
+                    </p>
+
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <Badge variant="outline">Django</Badge>
+                      <Badge variant="outline">DRF</Badge>
+                      <Badge variant="outline">Django Channels</Badge>
+                      <Badge variant="outline">Redis</Badge>
+                      <Badge variant="outline">WebSockets</Badge>
+                      <Badge variant="outline">PostgreSQL</Badge>
+                      <Badge variant="outline">JWT Auth</Badge>
+                    </div>
+
+                    <div className="mt-auto flex justify-between items-center">
+                      <AnimatedButton
+                        asChild
+                        variant="outline"
+                        size="sm"
+                        className="gap-1"
+                      >
+                        <a
+                          href="https://github.com/TechbyAbrar/wonderlink-social-media"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View Wonderlink Repository"
+                        >
+                          <Github className="h-4 w-4" />
+                        </a>
+                      </AnimatedButton>
+
+                      <AnimatedButton
+                        asChild
+                        size="sm"
+                        className="gap-1 opacity-50 cursor-not-allowed"
+                      >
+                        <a
+                          href="#"
+                          title="Live demo coming soon"
+                          aria-label="Live demo coming soon"
+                        >
+                          <ExternalLink className="h-4 w-4" />
+                        </a>
+                      </AnimatedButton>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            </FadeIn>
+
+            {/* Project 3 */}
+            <FadeIn delay={0.2}>
+              <motion.div
+                className="h-full"
+                whileHover={{ y: -10 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
+                <Card className="group overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                  <div className="relative aspect-video overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10"></div>
+                    <Image
+                      src={j4corpImg}
+                      alt="Auto Sync Moto Business Platform"
+                      width={1000}
+                      height={600}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+
+                  <CardContent className="p-4 sm:p-6 flex flex-col flex-1">
+                    <Badge className="mb-2 w-fit">Backend (Mobile App)</Badge>
+
+                    <h3 className="text-lg sm:text-xl font-bold mb-2">
+                      Auto Sync Moto Business Platform
+                    </h3>
+
+                    <p className="text-muted-foreground text-sm sm:text-base mb-4 line-clamp-6">
+                      Engineered a scalable backend system for a business automation platform
+                      used by 100k+ users, contributing to business growth exceeding $2M.
+                      Implemented real-time communication, modular business logic, and analytics
+                      APIs using Django, DRF, Channels, and PostgreSQL for high-performance and
+                      production-ready deployment.
+                    </p>
+
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <Badge variant="outline">Django</Badge>
+                      <Badge variant="outline">DRF</Badge>
+                      <Badge variant="outline">PostgreSQL</Badge>
+                      <Badge variant="outline">Django Channels</Badge>
+                      <Badge variant="outline">Redis</Badge>
+                      <Badge variant="outline">WebSockets</Badge>
+                      <Badge variant="outline">JWT Auth</Badge>
+                    </div>
+
+                    <div className="mt-auto flex justify-between items-center">
+                      <AnimatedButton
+                        asChild
+                        variant="outline"
+                        size="sm"
+                        className="gap-1"
+                      >
+                        <a
+                          href="https://github.com/TechbyAbrar/auto_sync_moto_business_tools_backend"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View Auto Sync Moto Backend Repository"
+                        >
+                          <Github className="h-4 w-4" />
+                        </a>
+                      </AnimatedButton>
+
+                      <AnimatedButton
+                        asChild
+                        size="sm"
+                        className="gap-1 opacity-50 cursor-not-allowed"
+                      >
+                        <a
+                          href="#"
+                          title="Live demo coming soon"
+                          aria-label="Live demo coming soon"
+                        >
+                          <ExternalLink className="h-4 w-4" />
+                        </a>
+                      </AnimatedButton>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            </FadeIn>
+
+            {/* Project 4 */}
+            <FadeIn delay={0.2}>
+              <motion.div
+                className="h-full"
+                whileHover={{ y: -10 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
+                <Card className="group overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                  <div className="relative aspect-video overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10"></div>
+                    <Image
+                      src={velooImg}
+                      alt="Veloo Service Platform"
+                      width={1000}
+                      height={600}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+
+                  <CardContent className="p-4 sm:p-6 flex flex-col flex-1">
+                    <Badge className="mb-2 w-fit">Backend (Web Application)</Badge>
+
+                    <h3 className="text-lg sm:text-xl font-bold mb-2">
+                      Veloo Service Platform
+                    </h3>
+
+                    <p className="text-muted-foreground text-sm sm:text-base mb-4 line-clamp-6">
+                      Built a scalable SaaS backend for a service provider platform serving
+                      23k+ users and 700+ paid subscribers. Implemented secure authentication,
+                      subscription management, and Stripe-based billing with a modular,
+                      production-ready Django REST architecture.
+                    </p>
+
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <Badge variant="outline">Django</Badge>
+                      <Badge variant="outline">DRF</Badge>
+                      <Badge variant="outline">PostgreSQL</Badge>
+                      <Badge variant="outline">Stripe</Badge>
+                      <Badge variant="outline">JWT Auth</Badge>
+                      <Badge variant="outline">SaaS</Badge>
+                      <Badge variant="outline">REST APIs</Badge>
+                    </div>
+
+                    <div className="mt-auto flex justify-between items-center">
+                      <AnimatedButton
+                        asChild
+                        variant="outline"
+                        size="sm"
+                        className="gap-1"
+                      >
+                        <a
+                          href="https://github.com/TechbyAbrar/service-provider-application"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View Veloo Backend Repository"
+                        >
+                          <Github className="h-4 w-4" />
+                        </a>
+                      </AnimatedButton>
+
+                      <AnimatedButton
+                        asChild
+                        size="sm"
+                        className="gap-1 opacity-50 cursor-not-allowed"
+                      >
+                        <a
+                          href="#"
+                          title="Live demo coming soon"
+                          aria-label="Live demo coming soon"
+                        >
+                          <ExternalLink className="h-4 w-4" />
+                        </a>
+                      </AnimatedButton>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            </FadeIn>
+
+            {/* Project 5 */}
             <FadeIn delay={0.1}>
               <motion.div
                 className='h-full'
@@ -2020,7 +2264,7 @@ export default function Portfolio() {
                   </div>
 
                   <CardContent className='p-4 sm:p-6 flex flex-col flex-1'>
-                    <Badge className='mb-2 w-fit'>Full Stack</Badge>
+                    <Badge className='mb-2 w-fit'>Full Stack (Web Application)</Badge>
 
                     <h3 className='text-lg sm:text-xl font-bold mb-2'>
                       Hot-Tube-Cinema
@@ -2049,7 +2293,7 @@ export default function Portfolio() {
                         className='gap-1'
                       >
                         <a
-                          href='https://github.com/tanvirrifat1/Hot-Tube-Cinema-Client'
+                          href='#'
                           target='_blank'
                           rel='noopener noreferrer'
                         >
@@ -2072,72 +2316,79 @@ export default function Portfolio() {
               </motion.div>
             </FadeIn>
 
-            {/* Project 3 */}
-            <FadeIn delay={0.3} className='md:col-span-2 lg:col-span-1'>
+            {/* Project 6 */}
+            <FadeIn delay={0.2}>
               <motion.div
-                className='h-full'
+                className="h-full"
                 whileHover={{ y: -10 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
-                <Card className='group overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col'>
-                  <div className='relative aspect-video overflow-hidden'>
-                    <div className='absolute inset-0 bg-gradient-to-t from-background to-transparent z-10'></div>
+                <Card className="group overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                  <div className="relative aspect-video overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10"></div>
                     <Image
-                      src={baby}
-                      alt='Baby-Sitter App Project'
-                      width={100}
-                      height={100}
-                      className='object-cover w-full h-full'
+                      src={datingAppImg}
+                      alt="Dating Application Backend"
+                      width={1000}
+                      height={600}
+                      className="object-cover w-full h-full"
                     />
                   </div>
 
-                  <CardContent className='p-4 sm:p-6 flex flex-col flex-1'>
-                    <Badge className='mb-2 w-fit'>Backend</Badge>
+                  <CardContent className="p-4 sm:p-6 flex flex-col flex-1">
+                    <Badge className="mb-2 w-fit">Backend (Mobile App)</Badge>
 
-                    <h3 className='text-lg sm:text-xl font-bold mb-2'>
-                      Baby-Sitter App (API)
+                    <h3 className="text-lg sm:text-xl font-bold mb-2">
+                      Blue Bird
                     </h3>
 
-                    <p className='text-muted-foreground text-sm sm:text-base mb-4 line-clamp-6'>
-                      A backend service for a real-time baby-sitting platform
-                      connecting parents and baby sitters. Parents can monitor their
-                      child 24/7 through live updates, video requests, nap tracking,
-                      and chat functionality. The system handles role-based access,
-                      secure authentication, and seamless sitter-parent communication
-                      using a scalable RESTful API architecture.
+                    <p className="text-muted-foreground text-sm sm:text-base mb-4 line-clamp-6">
+                      Built a scalable Django REST API backend for a modern dating
+                      application with real-time chat, matchmaking logic, subscriptions,
+                      and async task processing. Designed with Django Channels, Redis,
+                      Celery, and PostgreSQL to support high-performance mobile APIs and
+                      production-ready real-time interactions.
                     </p>
 
-                    <div className='flex flex-wrap gap-2 mb-4'>
-                      <Badge variant='outline'>Node.js</Badge>
-                      <Badge variant='outline'>Express</Badge>
-                      <Badge variant='outline'>MongoDB</Badge>
-                      <Badge variant='outline'>Socket.io</Badge>
-                      <Badge variant='outline'>AWS S3</Badge>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <Badge variant="outline">Django</Badge>
+                      <Badge variant="outline">Django REST Framework</Badge>
+                      <Badge variant="outline">PostgreSQL</Badge>
+                      <Badge variant="outline">Django Channels</Badge>
+                      <Badge variant="outline">Redis</Badge>
+                      <Badge variant="outline">Celery</Badge>
+                      <Badge variant="outline">Stripe</Badge>
+                      <Badge variant="outline">JWT Auth</Badge>
                     </div>
 
-                    <div className='mt-auto flex justify-between items-center'>
+                    <div className="mt-auto flex justify-between items-center">
                       <AnimatedButton
                         asChild
-                        variant='outline'
-                        size='sm'
-                        className='gap-1'
+                        variant="outline"
+                        size="sm"
+                        className="gap-1"
                       >
                         <a
-                          href='https://github.com/TechbyAbrar'
-                          target='_blank'
-                          rel='noopener noreferrer'
+                          href="https://github.com/TechbyAbrar/dating_app"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View Dating Application Backend Repository"
                         >
-                          <Github className='h-4 w-4' />
+                          <Github className="h-4 w-4" />
                         </a>
                       </AnimatedButton>
 
-                      <AnimatedButton asChild size='sm' className='gap-1'>
+                      <AnimatedButton
+                        asChild
+                        size="sm"
+                        className="gap-1 opacity-50 cursor-not-allowed"
+                      >
                         <a
-                          href='https://drive.google.com/drive/folders/1A_iBIut5VM_NoJ1rVrpqJ1SSTOpRMDXd'
-                          target='_blank'
-                          rel='noopener noreferrer'
+                          href="#"
+                          title="Live demo coming soon"
+                          aria-label="Live demo coming soon"
                         >
-                          <ExternalLink className='h-4 w-4' />
+                          <ExternalLink className="h-4 w-4" />
                         </a>
                       </AnimatedButton>
                     </div>
@@ -2145,6 +2396,8 @@ export default function Portfolio() {
                 </Card>
               </motion.div>
             </FadeIn>
+
+
           </div>
         </div>
       </section>
