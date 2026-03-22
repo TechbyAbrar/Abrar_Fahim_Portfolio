@@ -45,7 +45,10 @@ import Image from "next/image";
 import { FaUbuntu } from "react-icons/fa6";
 import { SiHostinger } from "react-icons/si";
 import rifat from "../assets/abrar_fahim.png";
+// assent importing
 import skinSpired from "../assets/skin.webp";
+import enitiativeImg from "../assets/enitiativeImg.png";
+import globalFootballVaultImg from "../assets/globalFootballVaultImg.png";
 import hotTube from "../assets/hot-tube.png";
 import baby from "../assets/baby-sitter.png";
 
@@ -1660,6 +1663,7 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
+
       {/* Projects Section */}
       <section ref={projectsRef} className='py-16 sm:py-20'>
         <div className='container px-4 md:px-6'>
@@ -1691,8 +1695,8 @@ export default function Portfolio() {
                   <div className='relative aspect-video overflow-hidden'>
                     <div className='absolute inset-0 bg-gradient-to-t from-background to-transparent z-10'></div>
                     <Image
-                      src={skinSpired}
-                      alt='SkinSpired Project'
+                      src={enitiativeImg}
+                      alt='Enitiative Project'
                       width={100}
                       height={100}
                       className='object-cover w-full h-full'
@@ -1700,33 +1704,28 @@ export default function Portfolio() {
                   </div>
 
                   <CardContent className='p-4 sm:p-6 flex flex-col flex-1'>
-                    <Badge className='mb-2 w-fit'>Backend</Badge>
+                    <Badge className='mb-2 w-fit'>Healthcare / AI Platform</Badge>
 
                     <h3 className='text-lg sm:text-xl font-bold mb-2'>
-                      SkinSpired
+                      Enitiative
                     </h3>
 
                     <p className='text-muted-foreground text-sm sm:text-base mb-4 line-clamp-6'>
-                      SkinSpired is a live mobile skincare application that helps
-                      users identify their skin conditions, follow recommended
-                      treatments, and track their skin improvement over time. Users
-                      can sign up, set up their profiles, and select their specific
-                      skin condition from a comprehensive list. The app allows users
-                      to take daily photos to monitor progress, compare results, and
-                      view improvement through visual graphs. Additionally, SkinSpired
-                      provides scheduled reminders and notifications to help users
-                      maintain consistent skincare routines. The platform is fully
-                      user-friendly and completely free, offering an effective and
-                      accessible solution for personalized skin health management.
+                      Enitiative is a healthcare-focused web platform that integrates
+                      AI-powered assistance to provide guidance, helpful resources,
+                      and emotional support for users. The platform helps people
+                      explore treatment-related information, access meaningful support,
+                      and navigate healthcare content through a modern, user-friendly
+                      digital experience.
                     </p>
 
                     <div className='flex flex-wrap gap-2 mb-4'>
-                      <Badge variant='outline'>Flutter</Badge>
-                      <Badge variant='outline'>Socket.IO</Badge>
-                      <Badge variant='outline'>Python</Badge>
-                      <Badge variant='outline'>Django</Badge>
-                      <Badge variant='outline'>MongoDB</Badge>
-                      <Badge variant='outline'>Django Rest Framework</Badge>
+                      <Badge variant='outline'>AI Integration</Badge>
+                      <Badge variant='outline'>Healthcare</Badge>
+                      <Badge variant='outline'>Web Platform</Badge>
+                      <Badge variant='outline'>User Support</Badge>
+                      <Badge variant='outline'>Stripe Integration</Badge>
+                      <Badge variant='outline'>Resource Guidance</Badge>
                     </div>
 
                     <div className='mt-auto flex justify-between items-center'>
@@ -1737,7 +1736,7 @@ export default function Portfolio() {
                         className='gap-1'
                       >
                         <a
-                          href='https://github.com/Alpha-Bytes-Department/skin-spired-server'
+                          href='https://github.com/TechbyAbrar/Dataharis-backends'
                           target='_blank'
                           rel='noopener noreferrer'
                         >
@@ -1747,7 +1746,7 @@ export default function Portfolio() {
 
                       <AnimatedButton asChild size='sm' className='gap-1'>
                         <a
-                          href='https://play.google.com/store/apps/details?id=com.lauren.personal_wellness&pli=1'
+                          href='https://enitiative.org/'
                           target='_blank'
                           rel='noopener noreferrer'
                         >
@@ -1763,75 +1762,74 @@ export default function Portfolio() {
             {/* Project -1 */}
             <FadeIn delay={0.2}>
               <motion.div
-                className='h-full'
+                className="h-full"
                 whileHover={{ y: -10 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
-                <Card className='group overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col'>
-                  <div className='relative aspect-video overflow-hidden'>
-                    <div className='absolute inset-0 bg-gradient-to-t from-background to-transparent z-10'></div>
+                <Card className="group overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                  <div className="relative aspect-video overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10"></div>
                     <Image
-                      src={skinSpired}
-                      alt='SkinSpired Project'
+                      src={globalFootballVaultImg}
+                      alt="GlobalFootballVault Project"
                       width={100}
                       height={100}
-                      className='object-cover w-full h-full'
+                      className="object-cover w-full h-full"
                     />
                   </div>
 
-                  <CardContent className='p-4 sm:p-6 flex flex-col flex-1'>
-                    <Badge className='mb-2 w-fit'>Backend</Badge>
+                  <CardContent className="p-4 sm:p-6 flex flex-col flex-1">
+                    <Badge className="mb-2 w-fit">Backend</Badge>
 
-                    <h3 className='text-lg sm:text-xl font-bold mb-2'>
-                      SkinSpired
+                    <h3 className="text-lg sm:text-xl font-bold mb-2">
+                      GlobalFootballVault
                     </h3>
 
-                    <p className='text-muted-foreground text-sm sm:text-base mb-4 line-clamp-6'>
-                      SkinSpired is a live mobile skincare application that helps
-                      users identify their skin conditions, follow recommended
-                      treatments, and track their skin improvement over time. Users
-                      can sign up, set up their profiles, and select their specific
-                      skin condition from a comprehensive list. The app allows users
-                      to take daily photos to monitor progress, compare results, and
-                      view improvement through visual graphs. Additionally, SkinSpired
-                      provides scheduled reminders and notifications to help users
-                      maintain consistent skincare routines. The platform is fully
-                      user-friendly and completely free, offering an effective and
-                      accessible solution for personalized skin health management.
+                    <p className="text-muted-foreground text-sm sm:text-base mb-4 line-clamp-6">
+                      Built a production-ready Django REST API for GlobalFootballVault, a
+                      football membership platform that combines AI-powered coaching
+                      experiences with subscriptions, ticketing, raffles, and secure
+                      payment workflows. The backend was designed for scalability,
+                      modularity, and real-world deployment using DRF, JWT, Celery,
+                      Redis, and Stripe.
                     </p>
 
-                    <div className='flex flex-wrap gap-2 mb-4'>
-                      <Badge variant='outline'>Flutter</Badge>
-                      <Badge variant='outline'>Socket.IO</Badge>
-                      <Badge variant='outline'>Python</Badge>
-                      <Badge variant='outline'>Django</Badge>
-                      <Badge variant='outline'>MongoDB</Badge>
-                      <Badge variant='outline'>Django Rest Framework</Badge>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <Badge variant="outline">Python</Badge>
+                      <Badge variant="outline">Django</Badge>
+                      <Badge variant="outline">Django REST Framework</Badge>
+                      <Badge variant="outline">PostgreSQL</Badge>
+                      <Badge variant="outline">JWT Auth</Badge>
+                      <Badge variant="outline">Stripe Payments</Badge>
+                      <Badge variant="outline">Celery</Badge>
+                      <Badge variant="outline">Redis</Badge>
                     </div>
 
-                    <div className='mt-auto flex justify-between items-center'>
+                    <div className="mt-auto flex justify-between items-center">
                       <AnimatedButton
                         asChild
-                        variant='outline'
-                        size='sm'
-                        className='gap-1'
+                        variant="outline"
+                        size="sm"
+                        className="gap-1"
                       >
                         <a
-                          href='https://github.com/Alpha-Bytes-Department/skin-spired-server'
-                          target='_blank'
-                          rel='noopener noreferrer'
+                          href="https://github.com/TechbyAbrar/samifootball"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View GlobalFootballVault GitHub Repository"
                         >
-                          <Github className='h-4 w-4' />
+                          <Github className="h-4 w-4" />
                         </a>
                       </AnimatedButton>
 
-                      <AnimatedButton asChild size='sm' className='gap-1'>
+                      <AnimatedButton asChild size="sm" className="gap-1">
                         <a
-                          href='https://play.google.com/store/apps/details?id=com.lauren.personal_wellness&pli=1'
-                          target='_blank'
-                          rel='noopener noreferrer'
+                          href="https://globalfootballvault.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="Visit GlobalFootballVault Live Site"
                         >
-                          <ExternalLink className='h-4 w-4' />
+                          <ExternalLink className="h-4 w-4" />
                         </a>
                       </AnimatedButton>
                     </div>
