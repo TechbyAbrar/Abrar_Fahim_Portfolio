@@ -476,9 +476,9 @@ export default function Portfolio() {
                 </motion.div>
                 <TextReveal delay={0.3}>
                   <h1 className='text-3xl sm:text-4xl font-bold tracking-tighter md:text-5xl xl:text-6xl/none'>
-                    Python Developer{" "}
+                    Software Engineer{" "}
                     <span className='text-primary block sm:inline'>
-                      with Full Stack Experience
+                      with Full Stack Python Experience
                     </span>
                   </h1>
                 </TextReveal>
@@ -499,6 +499,14 @@ export default function Portfolio() {
                   transition={{ duration: 0.6, delay: 0.6 }}
                 >
                   <StaggerChildren className='flex flex-wrap gap-2'>
+                    <StaggerItem>
+                      <Badge
+                        variant='outline'
+                        className='px-3 py-1 text-sm bg-background/80 backdrop-blur-sm'
+                      >
+                        Python
+                      </Badge>
+                    </StaggerItem>
                     <StaggerItem>
                       <Badge
                         variant='outline'
@@ -556,7 +564,7 @@ export default function Portfolio() {
                   Contact Me
                 </AnimatedButton>
                 <a
-                  href='https://drive.google.com/file/d/1kZPzrGGXJzuXyxkK2QK4N2llHV0ojUGM/view?usp=sharing'
+                  href='https://drive.google.com/file/d/11Oa2D3zWaUsF-ArevkkpYYQAVsTHf_yn/view?usp=sharing'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
