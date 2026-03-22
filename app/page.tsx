@@ -45,6 +45,7 @@ import Image from "next/image";
 import { FaUbuntu } from "react-icons/fa6";
 import { SiHostinger } from "react-icons/si";
 import rifat from "../assets/abrar_fahim.png";
+
 // assent importing
 import skinSpired from "../assets/skin.webp";
 import enitiativeImg from "../assets/enitiativeImg.png";
@@ -1868,7 +1869,7 @@ export default function Portfolio() {
                     <Badge className="mb-2 w-fit">Backend (Mobile App)</Badge>
 
                     <h3 className="text-lg sm:text-xl font-bold mb-2">
-                      Production Grade Dating Platform Backend
+                      Handshake
                     </h3>
 
                     <p className="text-muted-foreground text-sm sm:text-base mb-4 line-clamp-6">
@@ -1888,6 +1889,8 @@ export default function Portfolio() {
                       <Badge variant="outline">Celery</Badge>
                       <Badge variant="outline">ASGI</Badge>
                       <Badge variant="outline">WebSockets</Badge>
+                      <Badge variant="outline">Revenue Cat</Badge>
+                      <Badge variant="outline">Push Notification</Badge>
                     </div>
 
                     <div className="mt-auto flex justify-between items-center">
@@ -1968,6 +1971,7 @@ export default function Portfolio() {
                       <Badge variant="outline">JWT Auth</Badge>
                       <Badge variant="outline">WhiteNoise</Badge>
                       <Badge variant="outline">REST APIs</Badge>
+                      <Badge variant="outline">Revenue Cat</Badge>
                     </div>
 
                     <div className="mt-auto flex justify-between items-center">
@@ -2357,7 +2361,7 @@ export default function Portfolio() {
                       <Badge variant="outline">Django Channels</Badge>
                       <Badge variant="outline">Redis</Badge>
                       <Badge variant="outline">Celery</Badge>
-                      <Badge variant="outline">Stripe</Badge>
+                      <Badge variant="outline">Revenue Cat</Badge>
                       <Badge variant="outline">JWT Auth</Badge>
                     </div>
 
@@ -2502,29 +2506,30 @@ export default function Portfolio() {
                     </motion.div>
 
                      <motion.div
-                      className='flex items-center gap-4 p-3 sm:p-4 rounded-lg bg-muted/50'
-                      whileHover={{ x: 5 }}
-                      transition={{
-                        type: "spring",
-                        stiffness: 400,
-                        damping: 10,
-                      }}
-                    >
-                      <div className='h-8 w-8 sm:h-10 sm:w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary'>
-                        <Linkedin className='h-4 w-4 sm:h-5 sm:w-5' />
-                      </div>
-                      <div>
-                        <p className='text-xs sm:text-sm text-muted-foreground'>LinkedIn</p>
-                        <a
-                          href='https://www.linkedin.com/in/techbyabrar'
-                          target='_blank'
-                          rel='noopener noreferrer'
-                          className='font-medium text-sm sm:text-base hover:text-primary'
-                        >
-                          linkedin.com/in/techbyabrar
-                        </a>
-                      </div>
-                    </motion.div>
+                        className="flex items-center gap-4 p-3 sm:p-4 rounded-lg bg-muted/50"
+                        whileHover={{ x: 5 }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 400,
+                          damping: 10,
+                        }}
+                      >
+                        <div className="h-8 w-8 sm:h-10 sm:w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                          <Terminal className="h-4 w-4 sm:h-5 sm:w-5" />
+                        </div>
+
+                        <div>
+                          <p className="text-xs sm:text-sm text-muted-foreground">LeetCode</p>
+                          <a
+                            href="https://leetcode.com/techbyabrar"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-medium text-sm sm:text-base hover:text-primary"
+                          >
+                            techbyabrar
+                          </a>
+                        </div>
+                      </motion.div>
 
                   </CardContent>
                 </Card>
